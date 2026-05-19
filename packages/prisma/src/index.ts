@@ -1,4 +1,4 @@
-import { PrismaClient } from "../generated/prisma/client";
+import { PrismaClient } from "@prisma/client";
 import { PrismaPg } from "@prisma/adapter-pg";
 import { Pool } from "pg";
 
@@ -17,5 +17,5 @@ if (process.env.NODE_ENV !== "production") globalForPrisma.prisma = prisma;
 // ==========
 
 // export const prisma = new PrismaClient();
-export * from "../generated/prisma/client"
+export * from "@prisma/client";
 
