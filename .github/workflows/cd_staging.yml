@@ -17,7 +17,7 @@ jobs:
           username: ec2-user
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
-            cd turbo-prob-bms
+            cd turbo-proj-bms
             git pull origin main
             pnpm install
             pnpm build
