@@ -3,8 +3,7 @@ import { prisma } from "@repo/db/client"
 
 export default async function Home() {
   const user = await prisma.user.findFirst()
-  
-  
+    
   return (
     <div>
       {user?.username}
@@ -12,3 +11,6 @@ export default async function Home() {
     </div>
   );
 }
+
+// 2:15:00 
+// github actions start
